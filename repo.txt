@@ -1,0 +1,13 @@
+gamificacao-api
+java-threads
+microservice-cloud
+detroit-cloud
+spring-thymeleaf
+novidades-java
+java-io
+design-pattners
+spring-api
+optmizar-jpa
+spring-mvc-aula
+aulas-jpa
+ponto-inteligente
