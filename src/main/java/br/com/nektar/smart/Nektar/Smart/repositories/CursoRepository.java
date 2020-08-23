@@ -9,7 +9,5 @@ import br.com.nektar.smart.Nektar.Smart.models.Curso;
 
 @Repository
 public interface CursoRepository extends JpaRepository<Curso, Long> {
-
 	List<Curso> findByOrderByOrdemAsc();
-
 }

@@ -1,6 +1,7 @@
 package br.com.nektar.smart.Nektar.Smart.services;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -19,7 +20,12 @@ public class CursoService {
 	}
 
 	public List<Curso> buscar() {
-		List<Curso> pacoteList = cursoRepository.findByOrderByOrdemAsc();
-		return pacoteList;
+		List<Curso> cursoList = cursoRepository.findByOrderByOrdemAsc();
+		return cursoList;
+	}
+
+	public Curso buscarPorId(Long id) {
+		Optional<Curso> cursoOpt = cursoRepository.findById(id);
+		return cursoOpt.get();
 	}
 }

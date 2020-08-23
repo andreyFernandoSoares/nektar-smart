@@ -60,4 +60,9 @@ public class Curso {
 	public void setPacote(String pacote) {
 		this.pacote = pacote;
 	}
+	@Override
+	public String toString() {
+		return "Curso [id=" + id + ", nome=" + nome + ", descricao=" + descricao + ", explicacao=" + explicacao
+				+ ", imagem=" + imagem + ", ordem=" + ordem + ", pacote=" + pacote + "]";
+	}
 }
