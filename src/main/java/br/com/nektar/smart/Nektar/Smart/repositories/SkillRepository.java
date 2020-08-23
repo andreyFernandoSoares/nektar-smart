@@ -5,9 +5,9 @@ import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import br.com.nektar.smart.Nektar.Smart.models.Curso;
+import br.com.nektar.smart.Nektar.Smart.models.Skill;
 
 @Repository
-public interface CursoRepository extends JpaRepository<Curso, Long> {
-	List<Curso> findByOrderByOrdemAsc();
+public interface SkillRepository extends JpaRepository<Skill, Long> {
+	List<Skill> findByOrderByImageOrderAsc();
 }

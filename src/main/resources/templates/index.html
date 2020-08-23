@@ -27,8 +27,8 @@
 			<div id="main">
 				<div class="inner">
 					<div class="columns">
-						<div th:each="curso : ${cursos}" class="image fit">
-							<a th:href="@{/{id}(id = ${curso.id})}"><img th:src="${curso.imagem}" alt="" /></a>
+						<div th:each="skill : ${skills}" class="image fit">
+							<a th:href="@{/{id}(id = ${skill.id})}"><img th:src="${skill.image}" alt="" /></a>
 						</div>
 					</div>
 				</div>
